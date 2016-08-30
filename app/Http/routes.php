@@ -40,6 +40,7 @@ metodos http post,get,put,delete
 // 	return "La edad es:".$edad;
 // });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','FrontController@index');
+Route::get('/contacto','FrontController@contacto');
+Route::get('/reviews','FrontController@reviews');
+
